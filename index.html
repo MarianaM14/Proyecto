@@ -188,7 +188,33 @@
 				</div>
             </div>
         </div>
-		
+        <div class="container">
+            <div class="service card__primary">
+                <div class="text__service ">
+                    <p>CONTACTA CON NOSOTROS</p>
+                    <h1>Contacta con nosotros para brindarte el mejor servicio</h1>
+              
+            <form action="procesar_formulario.php" method="POST">
+                <label for="nombre">Nombre:</label>
+                <input type="text" id="nombre" name="nombre" required>
+                
+                <label for="celular">Numero de celular:</label>
+                <input type="text" id="celular" name="celular" required>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensaje">Mensaje:</label>
+                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+            <div class="image_about">
+                <img src="img/CONTACTAR/imaGE.png" alt="">
+
+            </div>
+            </div>
+        </div>
     </main>
 	
 </body>

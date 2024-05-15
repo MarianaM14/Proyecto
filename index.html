@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -7,22 +8,177 @@
     <title>Landing Page Modern - UFPSO</title>
 
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha384-..." crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css"
+        integrity="sha384-..." crossorigin="anonymous">
 </head>
+
 <body>
-   
+    <script>
+        function miFuncion() {
+            var variableLocal = "Soy una variable local";
+            console.log(variableLocal);
+        }
+        miFuncion(); 
+    </script>
+    <!-- ejercicio -->
+    <script>var globalVar = 10;
+
+        function myFunction() {
+            var localVar = 20;
+            console.log(globalVar);
+            console.log(localVar);
+        }
+        myFunction();  
+    </script>
+    <script>
+        function edad() {
+            let Edad = 2;
+            let mensaje = (Edad >= 18) ? "eres mayor de edad" : "eres menor de edad";
+            console.log(mensaje);
+        }
+        edad();
+    </script>
+
+    <script>
+        function calc() {
+            var num1 = 2;
+            var num2 = 5;
+            let sum = num1 + num2;
+            console.log(sum);
+            let mul = num1 * num2;
+            console.log(mul);
+            let mensaje = (num1 > num2) ? "el numero 1 es mayor" : "el numero 2 es mayor";
+            console.log(mensaje);
+            var boolVar = true;
+            var boolVar = boolVar && (num1 > num2);
+            console.log(boolVar);
+            var ternaryResult = (num1 > num2) ? "Mayor" : "menor o igual";
+            console.log(ternaryResult);
+        }
+        calc();
+    </script>
+
+    <script>
+        let persona = { name: "Ete Serch", age: "82", city: "Perú" }
+        console.log(persona.name)
+        var x;
+        let property = persona.age;
+        console.log(property);
+        console.log(typeof name);
+        console.log(typeof x);
+    </script>
+
+    <script>
+        var n = 15;
+        if (n > 0) {
+            console.log("el numero es positivo")
+        } else if (n < 0) {
+            console.log("el numero es negativo")
+        } else {
+            console.log("el numero es 0")
+        }
+        var mesdelaño = prompt("ingrese un mes", "");
+        switch (mesdelaño) {
+            case "enero":
+                console.log("Hoy es lunes.");
+                break;
+            case "febrero":
+                console.log("Hoy es martes.");
+                break;
+            case "marzo":
+                console.log("Hoy es miércoles.");
+                break;
+            case "abril":
+                console.log("Hoy es jueves.");
+                break;
+            case "mayo":
+                console.log("Hoy es viernes.");
+                break;
+            case "junio":
+                console.log("Hoy es sábado.");
+                break;
+            case "julio":
+                console.log("Hoy es domingo.");
+                break;
+            case "agosto":
+                console.log("Hoy es domingo.");
+                break;
+            case "sptiembre":
+                console.log("Hoy es domingo.");
+                break;
+            case "octubre":
+                console.log("Hoy es domingo.");
+                break;
+            case "noviembre":
+                console.log("Hoy es domingo.");
+                break;
+            case "diciembre":
+                console.log("Hoy es domingo.");
+                break;
+            default:
+                console.log("No es un día válido.");
+        }
+
+        for (let i = 1; i <= 10; i++) {
+            console.log(i);
+            if (i === 5) {
+                console.log("¡Se alcanzó el número 5!");
+                break;
+            }
+        }
+        for (let i = 1; i <= 10; i++) {
+            if (i % 2 === 0) {
+                continue; // Omite la impresión de números pares
+            }
+            console.log(i);
+        }
+    </script>
+    <script>
+        var n = parseInt(prompt("Por favor, ingresa un número:"));
+
+
+        var factorial = 1;
+        var i = 1;
+
+        do{
+            factorial *=i;
+            i++;
+        }
+        while (i <= n) ;
+           
+         console.log("producto de los primeros " + n + " números naturales es: " + factorial);  
+    
+    </script>
+    <Script>
+        
+        var inicio = 1;
+        var fin = 50;
+        var pares=0;
+        var impares=0;
+
+        for (var i=1 ; i<=50; i++){
+            if (i % 2 ===0 ){
+                pares++;
+            }
+            else{
+                impares++;
+            }
+        }
+        console.log ("cantidad de pares"+ pares);
+        console.log ("cantidad de impares" + impares);
+    </Script>
     <header>
-       
+
         <div class="container_header">
             <div class="logo">
                 <a href="#">
                     <img src="img/ICONS/logo tienda.png" alt="No se encontro la ruta de la imagen">
                 </a>
             </div>
-           
 
-            <div class="menu"> 
-            
+
+            <div class="menu">
+
                 <nav>
                     <ul>
                         <li><a href="#">Home</a></li>
@@ -32,44 +188,47 @@
                         <li><a href="#">Contact</a></li>
                     </ul>
                 </nav>
-                
+
                 <a href="#" class="btn_quote">Quote</a>
-             
+
                 <div class="socialMedia">
                     <a href="#">
                         <img src="img/LOGOS/logo facebook.png" alt="No se encontro la ruta de la imagen" width=" 100px">
                     </a>
                     <a href="#">
-                        <img src="img/LOGOS/logo instagram.png" alt="No se encontro la ruta de la imagen" width=" 100px">
+                        <img src="img/LOGOS/logo instagram.png" alt="No se encontro la ruta de la imagen"
+                            width=" 100px">
                     </a>
                     <a href="#">
                         <img src="img/LOGOS/logo twitter.png" alt="No se encontro la ruta de la imagen" width=" 200px">
                     </a>
-                    
+
                 </div>
-               
+
             </div>
-          
+
         </div>
-    
+
     </header>
-   
-	<main>
-       
+
+    <main>
+
         <div class="container__cover div__offset">
             <div class="cover">
                 <section class="text__cover">
                     <h1>CONSIENTE A TUS PEQUEÑOS EN LA MEJOR TIENDA DE PELUCHES</h1>
-                    <p>¡Descubre una tienda de peluches como ninguna otra! Explora nuestra colección de compañeros adorables y suaves que te harán sonreír. Desde ositos clásicos hasta personajes de tus películas favoritas, tenemos el peluche perfecto para ti. ¡Hazte feliz o regala ternura hoy mismo!</p>
+                    <p>¡Descubre una tienda de peluches como ninguna otra! Explora nuestra colección de compañeros
+                        adorables y suaves que te harán sonreír. Desde ositos clásicos hasta personajes de tus películas
+                        favoritas, tenemos el peluche perfecto para ti. ¡Hazte feliz o regala ternura hoy mismo!</p>
                     <a href="#" class="btn__text-cover btn__text">Empezar</a>
                 </section>
                 <section class="image__cover">
-                    <img src="img/ICONS/logo tienda.png "alt="">
+                    <img src="img/ICONS/logo tienda.png " alt="">
                 </section>
             </div>
         </div>
-		
-        
+
+
         <div class="container__trust container__card-primary">
             <div class="trust card__primary">
                 <div class="text__trust text__card-primary">
@@ -80,17 +239,20 @@
                     <div class="card__trust box__card-primary">
                         <img src="img/ICONS/icono 2.png" alt="" width=" 100px">
                         <h2>Peluches de Calidad Premium</h2>
-                        <p>Peluches confeccionados con materiales premium,suaves y duraderos, para abrazos que perduran.</p>
+                        <p>Peluches confeccionados con materiales premium,suaves y duraderos, para abrazos que perduran.
+                        </p>
                     </div>
                     <div class="card__trust box__card-primary">
                         <img src="img/ICONS/conejito.png" alt="" width=" 100px">
                         <h2>Opiniones de Nuestros Clientes</h2>
-                        <p>Descubre por qué nuestros clientes nos adoran, lee lo que dicen quienes ya tienen a sus amigos peludos".</p>
+                        <p>Descubre por qué nuestros clientes nos adoran, lee lo que dicen quienes ya tienen a sus
+                            amigos peludos".</p>
                     </div>
                     <div class="card__trust box__card-primary">
                         <img src="img/ICONS/oso-de-peluche.png" alt="" width=" 100px">
                         <h2>Equipo Amigable y Dispuesto a Ayudar</h2>
-                        <p>Nuestro equipo está aquí para hacer que tu experiencia de compra sea impecable,¡Contáctanos en cualquier momento, estaremos encantados de ayudarte!.</p>
+                        <p>Nuestro equipo está aquí para hacer que tu experiencia de compra sea impecable,¡Contáctanos
+                            en cualquier momento, estaremos encantados de ayudarte!.</p>
                     </div>
                 </div>
             </div>
@@ -99,14 +261,19 @@
             <div class="about">
                 <div class="text__about">
                     <h1>Nuestra historia</h1>
-                    <p>En un tranquilo rincón de la ciudad, nació D'Peluches, un sueño hecho realidad para María. Desde pequeña, María había encontrado consuelo y alegría en los suaves abrazos de sus peluches. Con el deseo de compartir esa felicidad con el mundo, decidió abrir su propia tienda de peluches.
-                        D'Peluches no es solo una tienda; es un refugio donde la ternura y la amistad se entrelazan en cada puntada. Cada peluche, cuidadosamente seleccionado y cosido a mano, lleva consigo el amor y la pasión de María por hacer sonreír a los demás.
-                        Únete a nosotros en D'Peluches y encuentra a tu compañero de abrazos perfecto. Porque en cada peluche, hay un amigo listo para compartir contigo momentos de alegría y consuelo.</p>
+                    <p>En un tranquilo rincón de la ciudad, nació D'Peluches, un sueño hecho realidad para María. Desde
+                        pequeña, María había encontrado consuelo y alegría en los suaves abrazos de sus peluches. Con el
+                        deseo de compartir esa felicidad con el mundo, decidió abrir su propia tienda de peluches.
+                        D'Peluches no es solo una tienda; es un refugio donde la ternura y la amistad se entrelazan en
+                        cada puntada. Cada peluche, cuidadosamente seleccionado y cosido a mano, lleva consigo el amor y
+                        la pasión de María por hacer sonreír a los demás.
+                        Únete a nosotros en D'Peluches y encuentra a tu compañero de abrazos perfecto. Porque en cada
+                        peluche, hay un amigo listo para compartir contigo momentos de alegría y consuelo.</p>
                     <a href="#" class="btn__text-about btn__text">Saber Más</a>
                 </div>
                 <div class="image__about">
                     <img src="img/HISTORIA/IMG_1.png" alt="">
-                    <img src="img/HISTORIA/IMG_2.png" alt="" >
+                    <img src="img/HISTORIA/IMG_2.png" alt="">
                 </div>
             </div>
         </div>
@@ -118,22 +285,28 @@
                 </div>
                 <div class="container__card-service container__box-cardPrimary">
                     <div class="card__service box__card-primary">
-                       <img src="img/SERVICIOS/Venta de peluches.png" alt="" >
+                        <img src="img/SERVICIOS/Venta de peluches.png" alt="">
                         <h2>Venta de peluches </h2>
-                        <p>Descubre una amplia gama de peluches de alta calidad en nuestra tienda. Desde adorables osos de peluche hasta encantadores personajes de películas y series, tenemos algo para cada gusto y ocasión.</p>
+                        <p>Descubre una amplia gama de peluches de alta calidad en nuestra tienda. Desde adorables osos
+                            de peluche hasta encantadores personajes de películas y series, tenemos algo para cada gusto
+                            y ocasión.</p>
                         <a href="#"> <i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a>
-                       
+
                     </div>
                     <div class="card__service box__card-primary">
                         <img src="img/SERVICIOS/Personalizacion.png" alt="">
                         <h2>Personalización</h2>
-                        <p>Ofrecemos servicios de personalización donde los clientes pueden diseñar su propio peluche, eligiendo el tipo de peluche, el diseño, los accesorios y hasta añadir un mensaje especial.</p>
+                        <p>Ofrecemos servicios de personalización donde los clientes pueden diseñar su propio peluche,
+                            eligiendo el tipo de peluche, el diseño, los accesorios y hasta añadir un mensaje especial.
+                        </p>
                         <a href="#"> <i class="fa-solid fa-arrow-right" style="color: #000000;"></i></a>
                     </div>
                     <div class="card__service box__card-primary">
                         <img src="img/SERVICIOS/Envoltura de regalos.png" alt="">
                         <h2>Envoltura de regalos</h2>
-                        <p>¿Quieres que tu regalo sea aún más especial? ¡Déjanos encargarnos del envoltorio! Ofrecemos un servicio de envoltura de regalos profesional para que tus peluches luzcan hermosos y listos para sorprender a tus seres queridos</p>
+                        <p>¿Quieres que tu regalo sea aún más especial? ¡Déjanos encargarnos del envoltorio! Ofrecemos
+                            un servicio de envoltura de regalos profesional para que tus peluches luzcan hermosos y
+                            listos para sorprender a tus seres queridos</p>
                         <a href="#">
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -142,7 +315,10 @@
                         <img src="img/SERVICIOS/Reparacion 1.png" alt="">
                         <img src="img/SERVICIOS/Reparacion 2.png" alt="">
                         <h2>Reparación</h2>
-                        <p>¿Tu peluche favorito necesita un poco de amor y cuidado? No te preocupes, nuestro equipo de expertos en peluches está aquí para ayudarte. Ofrecemos servicios de reparación para coser, rellenar y restaurar peluches dañados, para que puedas volver a disfrutar de ellos como nuevos.</p>
+                        <p>¿Tu peluche favorito necesita un poco de amor y cuidado? No te preocupes, nuestro equipo de
+                            expertos en peluches está aquí para ayudarte. Ofrecemos servicios de reparación para coser,
+                            rellenar y restaurar peluches dañados, para que puedas volver a disfrutar de ellos como
+                            nuevos.</p>
                         <a href="#">
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -150,7 +326,9 @@
                     <div class="card__service box__card-primary">
                         <img src="img/SERVICIOS/eventos especiales.png" alt="">
                         <h2>Eventos especiales</h2>
-                        <p>Únete a nosotros para emocionantes eventos especiales diseñados para toda la familia. Desde fiestas de cumpleaños hasta noches de pijamas y eventos de lectura de cuentos, hay algo divertido para todos. ¡Trae a tus peluches y únete a la diversión!</p>
+                        <p>Únete a nosotros para emocionantes eventos especiales diseñados para toda la familia. Desde
+                            fiestas de cumpleaños hasta noches de pijamas y eventos de lectura de cuentos, hay algo
+                            divertido para todos. ¡Trae a tus peluches y únete a la diversión!</p>
                         <a href="#">
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -158,7 +336,9 @@
                     <div class="card__service box__card-primary">
                         <img src="img/SERVICIOS/domicilios.png" alt="">
                         <h2>Entrega a domicilio</h2>
-                        <p>¿Prefieres recibir tus peluches directamente en tu puerta? ¡No hay problema! Ofrecemos servicios de entrega a domicilio para que puedas disfrutar de tus compras con total comodidad.</p>
+                        <p>¿Prefieres recibir tus peluches directamente en tu puerta? ¡No hay problema! Ofrecemos
+                            servicios de entrega a domicilio para que puedas disfrutar de tus compras con total
+                            comodidad.</p>
                         <a href="#">
                             <i class="fa-solid fa-arrow-right"></i>
                         </a>
@@ -173,19 +353,23 @@
                     <h1>Compruebe la verdadera innovación de la solución de problemas</h1>
                 </div>
                 <div class="container__card-proyect container__box-cardPrimary">
-					<div class="card__proyect box__card-primary" style="background-image: url(https://www.peluchesymas.com/wp-content/uploads/2021/05/miker.jpg);">
-						<h2>Kits de Peluche DIY </h2>
-						<p>(Hazlo Tú Mismo).</p>
-					</div>
-					<div class="card__proyect box__card-primary" style="background-image: url(https://i.pinimg.com/originals/22/3f/9e/223f9e13a9af2c64769933f450663a4d.png);">
-						<h2>Peluches Educativos</h2>
-						<p>enseñan conceptos como colores, números, letras, animales, formas, etc.</p>
-					</div>
-					<div class="card__proyect box__card-primary" style="background-image: url(https://i.pinimg.com/originals/0b/5e/e3/0b5ee3fc26f3e6e8877c89330a2b0798.png);">
-						<h2>Peluches Temáticos por Temporada</h2>
-						<p>variedad de peluches temáticos para ocasiones especiales como Navidad, Halloween, San Valentín, etc.</p>
-					</div>
-				</div>
+                    <div class="card__proyect box__card-primary"
+                        style="background-image: url(https://www.peluchesymas.com/wp-content/uploads/2021/05/miker.jpg);">
+                        <h2>Kits de Peluche DIY </h2>
+                        <p>(Hazlo Tú Mismo).</p>
+                    </div>
+                    <div class="card__proyect box__card-primary"
+                        style="background-image: url(https://i.pinimg.com/originals/22/3f/9e/223f9e13a9af2c64769933f450663a4d.png);">
+                        <h2>Peluches Educativos</h2>
+                        <p>enseñan conceptos como colores, números, letras, animales, formas, etc.</p>
+                    </div>
+                    <div class="card__proyect box__card-primary"
+                        style="background-image: url(https://i.pinimg.com/originals/0b/5e/e3/0b5ee3fc26f3e6e8877c89330a2b0798.png);">
+                        <h2>Peluches Temáticos por Temporada</h2>
+                        <p>variedad de peluches temáticos para ocasiones especiales como Navidad, Halloween, San
+                            Valentín, etc.</p>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="container">
@@ -193,29 +377,30 @@
                 <div class="text__service ">
                     <p>CONTACTA CON NOSOTROS</p>
                     <h1>Contacta con nosotros para brindarte el mejor servicio</h1>
-              
-            <form action="procesar_formulario.php" method="POST">
-                <label for="nombre">Nombre:</label>
-                <input type="text" id="nombre" name="nombre" required>
-                
-                <label for="celular">Numero de celular:</label>
-                <input type="text" id="celular" name="celular" required>
 
-                <label for="email">Email:</label>
-                <input type="email" id="email" name="email" required>
-                
-                <label for="mensaje">Mensaje:</label>
-                <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
-                
-                <button type="submit">Enviar</button>
-            </form>
-            <div class="image_about">
-                <img src="img/CONTACTAR/imaGE.png" alt="">
+                    <form action="procesar_formulario.php" method="POST">
+                        <label for="nombre">Nombre:</label>
+                        <input type="text" id="nombre" name="nombre" required>
 
+                        <label for="celular">Numero de celular:</label>
+                        <input type="text" id="celular" name="celular" required>
+
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" name="email" required>
+
+                        <label for="mensaje">Mensaje:</label>
+                        <textarea id="mensaje" name="mensaje" rows="4" required></textarea>
+
+                        <button type="submit">Enviar</button>
+                    </form>
+                    <div class="image_about">
+                        <img src="img/CONTACTAR/imaGE.png" alt="">
+
+                    </div>
+                </div>
             </div>
-            </div>
-        </div>
     </main>
-	
+
 </body>
+
 </html>

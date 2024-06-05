@@ -1,6 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -8,10 +8,10 @@
     font-family: 'Poppins', sans-serif;
 }
 
-:root{
-    --color_text-primary: #0d0d0e ;
+:root {
+    --color_text-primary: #0d0d0e;
     --color_text-secundary: hwb(180 8% 91%);
-    --color_text-tertiary: #0a090a;
+    --color_text-terciary: #7685db;
     --main_color-primary: rgb(88, 176, 192);
     --main_color-secundary: hsl(207, 34%, 56%);
     --background-color: #FAFBFE;
@@ -20,16 +20,20 @@
     --text_title_card: 24px;
     --text_title_cardv2: 20px;
     --text_paragraph: 16px;
-    --box_shadow-primary: 0px 6px 50px -20px rgba(0,0,0,0.2);
+    --box_shadow-primary: 0px 6px 50px -20px rgba(0, 0, 0, 0.2);
+    --color_separation: #9ed1fa;
+    --color_separation_2: #b7dfff;
+
 }
-header{
+
+header {
     width: 100%;
     height: 100px;
     position: fixed;
     z-index: 100;
 }
 
-.container_header{
+.container_header {
     max-width: 1200px;
     height: 100%;
     margin: auto;
@@ -39,46 +43,46 @@ header{
     padding: 0px 20px;
 }
 
-.logo{
+.logo {
     display: flex;
     align-items: center;
     position: relative;
     z-index: 1;
 }
 
-.logo img{
+.logo img {
     width: 100px;
 }
 
-.menu{
+.menu {
     display: flex;
     align-items: center;
 }
 
-.menu nav{
+.menu nav {
     margin: 0px 20px;
 }
 
-.menu nav ul{
+.menu nav ul {
     display: flex;
 }
 
-.menu nav ul li{
+.menu nav ul li {
     list-style: none;
     margin: 20px 16px;
 }
 
-.menu nav ul li a{
+.menu nav ul li a {
     color: var(--color_text-secundary);
     font-size: var(--lowText_font_size);
     position: relative;
 }
 
-.menu nav ul li a:hover{
+.menu nav ul li a:hover {
     color: var(--color_text-primary);
 }
 
-.btn_quote{
+.btn_quote {
     display: block;
     padding: 8px 40px;
     border: 2px solid var(--color_text-primary);
@@ -89,31 +93,31 @@ header{
     transition: all 300ms;
 }
 
-.btn_quote:hover{
+.btn_quote:hover {
     color: white;
     background: var(--color_text-primary);
 }
 
-.menu .socialMedia{
+.menu .socialMedia {
     margin: 0px 10px;
 }
 
-.menu .socialMedia a{
+.menu .socialMedia a {
     margin: 0px 4px;
 }
 
-.menu .socialMedia img{
+.menu .socialMedia img {
     width: 20px;
 }
 
 
-.container__cover{
+.container__cover {
     padding-top: 100px;
     padding-bottom: 100px;
     background: var(--main_color-secundary);
 }
 
-.cover{
+.cover {
     max-width: 1200px;
     margin: auto;
     margin-top: 100px;
@@ -122,23 +126,23 @@ header{
     padding: 0px 20px;
 }
 
-.text__cover{
+.text__cover {
     width: 100%;
     padding-right: 150px;
 }
 
-.text__cover h1{
+.text__cover h1 {
     font-size: 50px;
     color: var(--color_text-secundary);
 }
 
-.text__cover p{
+.text__cover p {
     font-size: var(--text_paragraph);
     margin-top: 40px;
     color: var(--color_text-tertiary);
 }
 
-.btn__text{
+.btn__text {
     display: block;
     width: 150px;
     margin-top: 40px;
@@ -153,59 +157,59 @@ header{
     transition: all 300ms;
 }
 
-.btn__text:hover{
+.btn__text:hover {
     background: transparent;
     border: 2px solid var(--main_color-primary);
     color: var(--color_text-tertiary);
 }
 
-.image__cover{
+.image__cover {
     width: 100%;
 }
 
-.image__cover img{
+.image__cover img {
     width: 550px;
 }
 
 
 
-.container__card-primary{
+.container__card-primary {
     padding-top: 100px;
 }
 
-.card__primary{
+.card__primary {
     max-width: 1200px;
     margin: auto;
     text-align: center;
     padding: 0px 20px;
 }
 
-.text__card-primary{
+.text__card-primary {
     max-width: 800px;
     margin: auto;
 }
 
-.text__card-primary p{
-    color: var(--color_text-primary);
+.text__card-primary p {
+    color: #0d0d0e;
     letter-spacing: 4px;
     font-size: var(--text_paragraph);
     font-weight: 500;
 }
 
-.text__card-primary h1{
+.text__card-primary h1 {
     font-size: var(--text_size_title);
     font-weight: 600;
     color: var(--color_text-secundary);
 }
 
-.container__box-cardPrimary{
+.container__box-cardPrimary {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     margin-top: 40px;
 }
 
-.box__card-primary{
+.box__card-primary {
     max-width: 350px;
     padding: 60px 40px;
     border: 1px solid #e6e6e6;
@@ -214,27 +218,28 @@ header{
     transition: all 300ms;
 }
 
-.box__card-primary:hover{
+.box__card-primary:hover {
     border: 1px solid transparent;
     box-shadow: var(--box_shadow-primary);
 }
 
-.box__card-primary h2{
+.box__card-primary h2 {
     font-size: var(--text_title_card);
     margin-top: 40px;
     font-weight: 500;
 }
 
-.box__card-primary p{
+.box__card-primary p {
     margin-top: 20px;
 }
 
-.container_about{
+.container_about {
     padding: 100px 0px;
     background: #c9c5c5;
     margin-top: 100px;
 }
-.about{
+
+.about {
     max-width: 1200px;
     margin: auto;
     padding: 0px 20px;
@@ -243,47 +248,47 @@ header{
     justify-content: center;
 }
 
-.text__about{
+.text__about {
     width: 100%;
     padding-right: 40px;
     margin-top: 20px;
 }
 
-.text__about h1{
+.text__about h1 {
     color: var(--color_text-secundary);
     font-weight: 600;
 }
 
-.text__about p{
+.text__about p {
     font-size: var(--text_paragraph);
     margin-top: 40px;
     color: var(--color_text-tertiary);
-    text-align: left;
 }
 
 
-.image__about{
-    max-width:150px;
+.image__about {
+    max-width: 200px;
     display: flex;
     height: auto;
 }
 
-.image__about img{
-    max-width: 150px;
-      height: auto;
+.image__about img {
+    max-width: 100px;
+    height: auto;
 }
 
-.card__service img{
+.card__service img {
     width: 50px;
 }
 
-.card__service i{
+.card__service i {
     font-size: 24px;
     margin-top: 20px;
     cursor: pointer;
     color: var(--color_text-primary);
 }
-.container__proyect{
+
+.container__proyect {
     padding: 100px 0px;
     background: var(--background-color);
     margin-top: 100px;
@@ -307,55 +312,350 @@ header{
     background-position: center;
 }
 
-.card__proyect h2, .card__proyect p {
+.card__proyect h2,
+.card__proyect p {
     margin: 0;
 }
 
 .card__proyect:hover {
-    transform: scale(1.05); 
-    transition: transform 0.3s ease; 
+    transform: scale(1.05);
+    transition: transform 0.3s ease;
 }
 
-.container {
-    max-width:3000px;
-    margin: 0 auto;
-    padding: 20px;
-    border: 1px solid #ccc;
-    border-radius: 8px;
-    background-color: #dee1e7;   
+/* inicio contenedores */
+.container__card-primary_in {
+    background-color: var(--color_separation_2);
+    padding-top: 100px;
 }
 
+.card__primary_in {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.text__card-primary_in {
+    max-width: 800px;
+    margin: auto;
+}
+
+.text__card-primary_in p {
+    color: #ffffff;
+    letter-spacing: 4px;
+    font-size: var(--text_paragraph);
+    font-weight: 500;
+}
+
+.text__card-primary_in h1 {
+    font-size: var(--text_size_title);
+    font-weight: 600;
+    color: var(--color_text-secundary);
+}
+
+.container__box-cardPrimary_in {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+
+}
+
+.box__card-primary_in {
+    max-width: 350px;
+    padding: 60px 40px;
+    border-radius: 100%;
+    margin: 14px;
+    transform: scale(0.7);
+    transition: all 600ms;
+    background-image: url(https://www.aauniv.com/s/blog/wp-content/uploads/2022/05/que-es-la-comunicacion-importancia.jpg);
+}
+
+.box__card-primary_in2 {
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 100%;
+    margin: 14px;
+    transform: scale(0.7);
+    transition: all 600ms;
+    background-image: url(https://rockcontent.com/es/wp-content/uploads/sites/3/2022/03/comunicacion-efectiva-1024x538.jpg.webp);
+}
+
+.box__card-primary_in3 {
+    max-width: 350px;
+    padding: 60px 40px;
+    border: 1px solid #e6e6e6;
+    border-radius: 100%;
+    margin: 14px;
+    transform: scale(0.7);
+    transition: all 600ms;
+    background-image: url(https://qlu.ac.pa/wp-content/uploads/2023/05/para-que-sirve-una-estrategia-de-comunicacion-300x200.jpg);
+}
+
+.box__card-primary_in:hover {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transform: scale(1);
+}
+
+.box__card-primary_in2:hover {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transform: scale(1);
+}
+
+.box__card-primary_in3:hover {
+    border: 1px solid transparent;
+    border-radius: 20px;
+    transform: scale(1);
+}
+
+.box__card-primary_in h2 {
+    color: #ffff;
+    font-size: var(--text_title_card);
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.box__card-primary_in2 h2 {
+    color: #ffff;
+    font-size: var(--text_title_card);
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.box__card-primary_in3 h2 {
+    color: #ffff;
+    font-size: var(--text_title_card);
+    margin-top: 40px;
+    font-weight: 500;
+}
+
+.box__card-primary_in p {
+    color: #ffff;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: start;
+}
+
+.box__card-primary_in2 p {
+    color: #ffff;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: start;
+}
+
+.box__card-primary_in3 p {
+    color: #ffff;
+    margin-top: 20px;
+    margin-bottom: 30px;
+    text-align: start;
+}
+
+/* fin contenedores */
+
+/* inicio perfiles */
 
 
-label {
+
+.container__card-primary_perf {
+    background-color: #f8f8f8;
+    padding-top: 70px;
+    color: #c9c5c5;
+}
+
+.card__primary_perf {
+    max-width: 1200px;
+    margin: auto;
+    text-align: center;
+    padding: 0px 20px;
+}
+
+.text__card-primary_perf {
+    max-width: 800px;
+    margin: auto;
+}
+
+.text__card-primary_perf p,
+.text__card-primary_perf h1 {
+    color: #333;
+    letter-spacing: 2px;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.container__box-cardPrimary_perf {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 40px;
+}
+
+.box__card-primary_perf {
+    max-width: 350px;
+    padding: 40px;
+    border: 2px solid #3498db;
+    border-radius: 20px;
+    margin: 14px;
+    background-color: #ecf0f1;
+    opacity: 0.9;
+    transition: all 0.3s ease;
+}
+
+.box__card-primary_perf:hover {
+    border-color: #2980b9;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    transform: scale(1.1);
+    background-color: #fff;
+}
+
+.box__card-primary_perf h2 {
+    font-size: 24px;
+    margin-top: 20px;
+    font-weight: 600;
+    color: #333;
+}
+
+.box__card-primary_perf p {
+    margin-top: 20px;
+    margin-bottom: 30px;
+    color: #555;
+}
+
+.box__card-primary_perf img {
+    border-radius: 50%;
+    width: 200px;
+    height: 200px;
+    object-fit: cover;
+    transition: all 0.3s ease;
     display: block;
-    margin-bottom: 10px;
+    margin: 0 auto;
 }
-input, textarea {
+
+
+
+/* fin perfiles */
+
+
+.contact-section {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    background-color: #fffcfc75;
+}
+
+.map {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.map iframe {
+    padding: 50px;
     width: 100%;
-    padding: 8px;
-    margin-bottom: 20px;
-    border: 1px solid #ccc;
-    border-radius: 4px;
+    height: 500px;
+    border: 0;
+    border-radius: 5px;
 }
-button {
-    padding: 10px 20px;
-    background-color: #25855d;
+
+.contact-form {
+    flex: 1;
+    padding: 50px;
+}
+
+.contact-form h2 {
+    color: #333;
+}
+
+.contact-form form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact-form input,
+.contact-form textarea {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    padding: 10px;
+    background-color: var(--main_color-primary);
     color: #fff;
     border: none;
-    border-radius: 4px;
+    border-radius: 5px;
     cursor: pointer;
 }
-button:hover {
-    background-color: #25855d;
-}
-.image__about{
-    display: flex;
-    justify-content:right;
-    margin-left: 40px;
-}
-.text_service{
-    display: flex;
-    justify-content: left;
 
+.contact-form button:hover {
+    background-color: var(--color_text-tertiary);
+}
+
+/* fin de formulario */
+
+/* pie de pagina */
+
+footer {
+    background-color: #2c3e50;
+   
+    color: #ecf0f1;
+    /* Texto blanco */
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    max-width: 1000px;
+    margin: 0 auto;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 10px;
+    min-width: 200px;
+}
+
+.footer-section h3 {
+    margin-bottom: 15px;
+    color: #3498db;
+   
+}
+
+.footer-section p,
+.footer-section ul,
+.footer-section a {
+    color: #ecf0f1;
+
+    text-decoration: none;
+}
+
+.footer-section ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.footer-section ul li {
+    margin-bottom: 10px;
+}
+
+.footer-section a:hover {
+    color: #3498db;
+    
+}
+
+.footer-bottom {
+    background-color: #34495e;
+   
+    padding: 10px 0;
+}
+
+.footer-bottom p {
+    margin: 0;
+    color: #ecf0f1;
+    /* Blanco */
 }
